@@ -17,6 +17,7 @@ def hello_world():
 
 
 
+
 @app.route('/widgets')
 def get_widgets():
     with psycopg2.connect(host="db", user="postgres", password=password, database="example") as conn:
